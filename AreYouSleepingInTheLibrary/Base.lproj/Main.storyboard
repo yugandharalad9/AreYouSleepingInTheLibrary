@@ -30,7 +30,16 @@
                                 <state key="normal" title="Grab New Image">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="grabNewImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jZg-W3-H3R"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fz9-UM-qbD">
+                                <rect key="frame" x="16" y="573" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -38,12 +47,21 @@
                             <constraint firstItem="osU-jV-40I" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="109" id="MkW-Bo-0yF"/>
                             <constraint firstItem="osU-jV-40I" firstAttribute="centerX" secondItem="xi6-cw-xBs" secondAttribute="centerX" id="Ujg-vU-pam"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="osU-jV-40I" secondAttribute="bottom" constant="33" id="Wj6-Yb-aQa"/>
+                            <constraint firstItem="fz9-UM-qbD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Zab-a2-XhY"/>
                             <constraint firstItem="xi6-cw-xBs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="fSq-79-i9K"/>
                             <constraint firstItem="xi6-cw-xBs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="lEL-gb-fw9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fz9-UM-qbD" secondAttribute="trailing" constant="16" id="lFg-IB-aUX"/>
                             <constraint firstItem="osU-jV-40I" firstAttribute="top" secondItem="xi6-cw-xBs" secondAttribute="bottom" constant="19" id="o2Q-Ph-3KV"/>
+                            <constraint firstItem="osU-jV-40I" firstAttribute="top" secondItem="fz9-UM-qbD" secondAttribute="bottom" constant="-10" id="s14-Ac-zr6"/>
+                            <constraint firstItem="fz9-UM-qbD" firstAttribute="top" secondItem="xi6-cw-xBs" secondAttribute="bottom" constant="8" id="x5y-Dv-1y3"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="grabImageButton" destination="osU-jV-40I" id="lvs-0p-wpk"/>
+                        <outlet property="photoImageView" destination="xi6-cw-xBs" id="932-wl-yyy"/>
+                        <outlet property="photoTitleLabel" destination="fz9-UM-qbD" id="4hf-SE-eMM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
